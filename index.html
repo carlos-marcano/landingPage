@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -29,18 +30,18 @@
         <section class="block block--dark block--skewed-left hero">
             <div class="grid grid--1x2 container">
                 <header class="block__header hero__content">
-                    <h1 class="block__heading">Cloud Hosting For Pros</h1>
+                    <h1 class="block__heading" data-aos="fade-right">Cloud Hosting For Pros</h1>
                     <p class="hero__tagline">Deploy your websited in less than 60 seconds.</p>
                     <a href="" class="btn btn--accent btn--stretched">Get Started</a>
                 </header>
-                <picture>
+                <picture data-aos="zoom-in">
                     <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2X.webp 2x">
                     <source type="image/png" srcset="images/banner.png 1x, images/banner@2X.png 2x">
                     <img class="hero__image" src="images/banner.png" alt="" />
                 </picture>
             </div>        
         </section>
-        <section class="block container block-domain">
+        <section class="block container block-domain" data-aos="zoom-in">
             <header class="block__header">
                 <h2>Starting at 9$ per month</h2>
                 <p>
@@ -62,7 +63,7 @@
                 <li>.xyz $10</li>
             </ul>
         </section>
-        <section class="block container block-plans">
+        <section class="block container block-plans" data-aos="fade-up"> 
             <div class="grid grid--1x3">
                 <div class="plan">
                     <div class="card card--secondary">
@@ -132,7 +133,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eveniet.</p>
             </header>
             <article class="grid grid--1x2 feature">
-                <div class="feature__content">
+                <div class="feature__content" data-aos="fade-right">
                     <span class="icon-container">
                         <svg class="icon icon--primary">
                             <use xlink:href="images/sprite.svg#easy"></use>
@@ -142,7 +143,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias odio provident, eos, esse commodi incidunt adipisci blanditiis ea ad expedita atque a ullam, unde sequi.</p>   
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
-                <picture>
+                <picture data-aos="zoom-in-left">
                     <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2X.webp 2x">
                     <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2X.jpg 2x">
                     <img class="feature__image" src="images/easy@2X.jpg" alt="">
@@ -205,12 +206,12 @@
                 <h2>User-friendly Control Panel</h2>
             </header>
             <div class="container grid grid__1x2">
-                <picture class="block-showcase__image">
+                <picture data-aos="fade-right" class="block-showcase__image">
                     <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2X.webp 2x">
                     <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2X.png 2x">
                     <img  src="images/ipad.png" alt="">
                 </picture>
-                <ul class="list">
+                <ul class="list" data-aos="fade-up">
                     <li>
                         <div class="media">
                             <div class="media__image">           
@@ -263,7 +264,7 @@
                 </ul>
             </div>
         </section>
-        <section class="block">
+        <section class="block" data-aos="zoom-in">
             <header class="block__header">
                 <h2>What our Customers are Saying</h2>
                 <p>
@@ -408,5 +409,9 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
